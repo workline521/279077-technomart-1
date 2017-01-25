@@ -109,45 +109,71 @@
             </div>
       </div>
         <div class="left-column">
-        <form action="/echo" method="post" oninput="priceoutput.value=pricecount.value">
          <h2>ЦЕНА:</h2>
-         <div class="yellow-background">
-           <label ></label>
-            0<input type="range" id="pricecount" name="pricecount" min="0" max="30000" step="1">30000
-       <div class="yellow-numbers">
-           <output name="priceoutput">
-         </output>
-       </div>
-         </div>
-          <div class="brands">
+         <form action="form.php" method="GET">
+      <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <div class="price-controls">
+          <label class="min-price"><input name="min-price" type="text" value="0"></label>
+          <label class="max-price"><input name="max-price" type="text" value="30000"></label>
+        </div>
+      </div>
+            </form>
+            <div class="brands">
+          <form action="form.php" method="post">
          <h2>ПРОИЗВОДИТЕЛИ:</h2>
-             <input type="checkbox" checked name="BOSCH" id="BOSCH">
-             <label for="BOSCH">BOSCH</label>
-             <input type="checkbox" name="ИНТЕРСКОЛ" id="ИНТЕРСКОЛ">
-             <label for="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
-             <input type="checkbox" checked name="MAKITA" id="MAKITA">
-             <label for="MAKITA">MAKITA</label>
-             <input type="checkbox" name="DEWALT" id="DEWALT">
-             <label for="DEWALT">DEWALT</label>
-             <input type="checkbox" name="HITACHI" id="HITACHI">
-             <label for="HITACHI">HITACHI</label>
+            <label class="brands-checkbox">
+            BOSCH
+          <input type="checkbox" checked name="BOSCH">
+          <span class="checkbox-indicator"></span>
+          </label>
+            <label class="brands-checkbox">
+            ИНТЕРСКОЛ
+          <input type="checkbox" name="ИНТЕРСКОЛ">
+          <span class="checkbox-indicator"></span>
+        </label>
+            <label class="brands-checkbox">
+             MAKITA
+          <input type="checkbox" checked name="MAKITA">
+          <span class="checkbox-indicator"></span>
+        </label>
+            <label class="brands-checkbox">
+             DEWALT
+          <input type="checkbox" name="DEWALT">
+          <span class="checkbox-indicator"></span>
+        </label>
+            <label class="brands-checkbox">
+            HITACHI
+          <input type="checkbox" name="HITACHI">
+          <span class="checkbox-indicator"></span>
+         </label>
+              </form>
              </div>
-     <div class="power">
-         <h2>ПИТАНИЕ</h2>
-         <div class="radio-buttons">
-            <label>
-             <input type="radio" checked name="power" value="АККУМУЛЯТОРНЫЕ">АККУМУЛЯТОРНЫЕ
-             </label>
-             
-             <label>
-                 <input type="radio" name="net" value="СЕТЕВЫЕ">СЕТЕВЫЕ
-             </label>
-             </div>
+              <div class="power">
+              <form action="form.php" method="post">
+         <h2>ПИТАНИЕ:</h2>
+                  <div class="radio-buttons">
+                  <label class="radiobtn">
+            АККУМУЛЯТОРНЫЕ
+          <input type="checkbox" checked name="power-cells">
+          <span class="checkbox-indicator"></span>
+          </label>
+            <label class="radiobtn">
+          СЕТЕВЫЕ
+          <input type="checkbox" name="power-outlet">
+          <span class="checkbox-indicator"></span>
+        </label>
+                  </div>
              <button class="show" type="submit">ПОКАЗАТЬ</button>
-       
-     </div>
-         </form>
-     </div>
+           </form>
+                  </div>
+              </div>  
      <div class="right-column"
           ><div class="catalog-items"
           ><div class="catalog-item">
@@ -250,15 +276,14 @@
               ><a class="page-list" href="#">3</a
               ><a class="next-page" href="#">СЛЕДУЮЩАЯ</a
               ></div>
-           
-         </div>
+            </div>
           <div class="clearfix"></div>
           </main>
            <article>
              <div class="container">
               <div class="article-title"><h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2></div>
                <div class="article-content">
-Перфоратор-универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
 ассортиментном ряду есть выбор «трехрежимников»:в одном устройстве будут совмещены отбойный молоток и ударная дрель.</div>
           </div>
@@ -267,7 +292,7 @@
        <div class="primary-footer">
         <div class="container">
           <div class="left-part">
-            <img class="footer-logo" src="img/footer-logo220-68.jpg" width="220" height="68" alt="technomart-logo"> 
+            <a href="#"><img class="footer-logo" src="img/footer-logo.png" width="220" height="68" alt="technomart-logo"></a> 
            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 +7 (812) 555-05-55
            </p>

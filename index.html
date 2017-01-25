@@ -16,7 +16,7 @@
             <img  src="img/logo.png" width="220" height="47" alt="technomart-logo">
             </div
             ><div class="block search-tab">
-              <form class="search-button" action="/echo" method="post">
+              <form class="search-button" action="/echo" method="get">
               <label  for="search"></label>
               <input type="search" id="search" name="search" value="Поиск:">
              </form>
@@ -292,7 +292,7 @@
 Вы можете забрать товар сами,
 заехав в наш офис:
             </p>
-            <img src="img/map300-158.jpg" width="300" height="158" alt="map">
+            <a class="map" href="#"><img  src="img/map300-158.jpg" width="300" height="158" alt="map"></a>
            <a class="button3 lost" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </div>
             </div>
@@ -302,7 +302,7 @@
        <div class="primary-footer">
         <div class="container">
           <div class="left-part">
-            <img class="footer-logo" src="img/footer-logo220-68.jpg" width="220" height="68" alt="technomart-logo"> 
+           <a href="#"><img class="footer-logo" src="img/footer-logo.png" width="220" height="68" alt="technomart-logo"></a>
            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 +7 (812) 555-05-55
            </p>
@@ -352,5 +352,26 @@
         ></div>
       </div>
     </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <ul>
+      <li><a class="popup-button1" href="#">ОФОРМИТЬ ЗАКАЗ</a></li>
+      <li><a class="popup-button2" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a></li>
+      </ul>
+    </div>
+    <div class="modal-content-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+       </div>
+       <div class="modal-mail">
+          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+           <form class="mail" action="#" method="post">
+           <p>Ваше имя:                                     Ваш e-mail:</p>
+            <input type="text" name="name" id="name" value="" placeholder="Представьтесь, пожалуйста">
+            <input type="text" name="mail" id="mail" value="" placeholder="Для отправки ответа">
+            <p>Текст письма:</p>
+            <textarea name="usermail" id="usermail" rows="5" placeholder="В свободной форме"></textarea>
+            <button class="send-mail" type="submit">ОТПРАВИТЬ</button>
+          </form>
+       </div>
  </body>
 </html>
