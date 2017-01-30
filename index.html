@@ -91,7 +91,7 @@
             </div
                    ></div
                    ><div class="content2">
-                   <div class="slider">
+                  <div class="slider">
                    <input type="radio" id="btn-1" name="toggle" checked>
                    <input type="radio" id="btn-2" name="toggle">
                     <div class="slider-controls">
@@ -99,7 +99,7 @@
                         <label for="btn-2"></label>
                     </div>
                      <div class="slides">
-                     <div class="slide">
+                     <div class="slide main-slide">
               <div class="slide-text">
                 <div class="slide-title"><b>ПЕРФОРАТОРЫ</b></div>
                 <p>Настоящие мужские игрушки</p>
@@ -108,7 +108,7 @@
                 <a class="button5" href="#">ОТКРЫТЬ КАТАЛОГ</a> 
                 </div>
                 </div>
-                <div class="slide">
+                <div class="slide add-slide">
               <div class="slide-text">
                 <div class="slide-title"><b>ДРЕЛИ</b></div>
                 <p>Соседям на радость!</p>
@@ -243,24 +243,17 @@
         <p>Хороший интернет-магазин отличается от плохого не только ценами!
 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными. 
             </p>
-      </div>
-                   <div class="block3 service-item">
-                   <div class="service-menu">
-                   <ul>
-                    <li><a href="#delivery">Доставка</a></li>
-                    <li><a href="#warranty">Гарантия</a></li>
-                    <li><a href="#credit">Кредит</a></li>
-                     </ul> 
-                     </div>
-                   </div>
-                  <div class="description">                   
-                  <div class="delivery-description"><h2>ДОСТАВКА</h2>
-                <p>Мы с удовольствием доставим ваш товар прямо
-к вашему подъезду совершенно бесплатно!
-Ведь мы неплохо заработаем,
-поднимая его на ваш этаж!</p>
-                 </div>
-                 </div>
+      </div
+                ><div class="service-menu block3">
+                  <div class="ds"><a class="delivery-service" href="#">Доставка</a></div>
+                  <div class="gs"><a class="guarantee-service" href="#">Гарантия</a></div>
+                  <div class="cs"><a class="credit-service" href="#">Кредит</a></div>
+                  </div
+                  ><div class="service-slider"> 
+                  <div class="delivery-slide"></div>                
+                 <div class="guarantee-slide"></div> 
+                 <div class="credit-slide"><a class="credit-button" href="#">ОТПРАВИТЬ ЗАЯВКУ</a></div> 
+              </div>
             </div>
           </section>
         <section class="columns">
@@ -360,9 +353,10 @@
       </ul>
     </div>
     <div class="modal-content-map">
-      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <button class="modal-content-close close-map" type="button" title="Закрыть">Закрыть</button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616100688!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1485586657268" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
        </div>
-       <div class="modal-mail">
+     <div class="modal-mail">
           <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
            <form class="mail" action="#" method="post">
            <p>Ваше имя:                                     Ваш e-mail:</p>
@@ -373,5 +367,6 @@
             <button class="send-mail" type="submit">ОТПРАВИТЬ</button>
           </form>
        </div>
- </body>
+      <script src="js/index.js"></script>
+    </body>
 </html>
