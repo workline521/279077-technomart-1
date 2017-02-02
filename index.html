@@ -17,7 +17,7 @@
 				<div class="search-tab">
 					<form class="search-button" action="/echo" method="get">
 						<label for="search"></label>
-						<input type="search" id="search" name="search" value="Поиск:"> </form>
+						<input  class="focus-search" type="search" id="search" name="search" placeholder="Поиск:"  > </form>
 				</div>
 				<div class="order"> <a class="upper-menu-text" href="#">Оформить заказ</a> </div>
 				<div class="cart">
@@ -179,7 +179,7 @@
 			</section>
 		</div>
 		<section class="service-block">
-			<div class="container">
+			<div class="container shadow">
 				<div class="services">
 					<h2>СЕРВИСЫ</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!
@@ -262,7 +262,7 @@
 		<div class="secondary-footer">
 			<div class="container">
 				<div class="footer-company">
-					<p>© 2010-2017 Компания «Техномарт»
+					<p>© 2010—2017 Компания «Техномарт»
 						<br> Все права защищены </p>
 				</div>
 				<div class="footer-social">
@@ -293,11 +293,14 @@
 	<div class="modal-mail">
 		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 		<form class="mail" action="#" method="post">
-			<p>Ваше имя: Ваш e-mail:</p>
-			<input type="text" name="name" id="name" value="" placeholder="Представьтесь, пожалуйста">
-			<input type="text" name="mail" id="mail" value="" placeholder="Для отправки ответа">
+			<p>Ваше имя:                                                   Ваш e-mail:</p>
+			<input type="text" required name="name" id="name" value="" placeholder="Представьтесь, пожалуйста">
+			<label for="name"></label>
+			<input type="text" required name="mail" id="mail" value="" placeholder="Для отправки ответа">
+			<label for="mail"></label>
 			<p>Текст письма:</p>
-			<textarea name="usermail" id="usermail" rows="5" placeholder="В свободной форме"></textarea>
+			<textarea name="usermail" required id="usermail" rows="5" placeholder="В свободной форме"></textarea>
+			<label for="usermail"></label>
 			<button class="send-mail" type="submit">ОТПРАВИТЬ</button>
 		</form>
 	</div>
