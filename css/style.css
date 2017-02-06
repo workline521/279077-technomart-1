@@ -10,11 +10,13 @@ body {
 .header1 {
 	height: 42px;
 	background-color: #293449;
+	font-size: 0;
 }
 
 .header2 {
 	background-color: #f1f5f7;
 	min-height: 278px;
+	font-size: 0;
 }
 
 .container {
@@ -23,16 +25,18 @@ body {
 }
 
 .upper-menu-text {
-	vertical-align: middle;
 	text-decoration: none;
-	font-family: "Cuprum";
 	font-size: 17px;
 	line-height: 18px;
 	color: #ffffff;
 }
 
+.header1 li {
+	text-align: center;
+	max-width: 150px;
+}
+
 .logo {
-	float: left;
 	width: 220px;
 	height: 42px;
 	text-align: center;
@@ -56,7 +60,6 @@ body {
 }
 
 .search-tab {
-	float: left;
 	position: relative;
 	width: 270px;
 }
@@ -74,9 +77,21 @@ body {
 	padding-bottom: 2px;
 	box-sizing: border-box;
 }
-.search-button input::-webkit-input-placeholder{
+
+.search-button input::-webkit-input-placeholder {
 	color: #ffffff;
 }
+
+.search-button input::-moz-placeholder {
+	color: #ffffff;
+	opacity: 1;
+}
+
+.search-button input:-ms-input-placeholder {
+	color: #ffffff;
+	opacity: 1;
+}
+
 .search-tab::before {
 	content: "";
 	position: absolute;
@@ -85,8 +100,7 @@ body {
 	width: 18px;
 	height: 18px;
 	background: transparent url("../img/sprite.png") no-repeat -5px -453px;
-    opacity: 0.3;
-	
+	opacity: 0.3;
 }
 
 .search-button input:hover {
@@ -102,30 +116,28 @@ body {
 input.focus-search:focus {
 	background: #ffffff url("../img/.icon-search-focus.png") no-repeat 17px 12px;
 	color: #000000;
-	
 }
 
 input.focus-search:focus::-webkit-input-placeholder {
 	color: #262626;
 }
 
+input.focus-search:focus::-moz-placeholder {
+	opacity: 1;
+	color: #262626;
+}
+
+input.focus-search:focus:-ms-input-placeholder {
+	opacity: 1;
+	color: #262626;
+}
+
 .bookmarks {
-	float: right;
-	width: 150px;
-	text-align: center;
-}
-
-.bookmarks-inline {
 	position: relative;
-	display: block;
-	vertical-align: middle;
-	height: 32px;
-	padding-top: 10px;
-	padding-left: 27px;
-	padding-right: 10px;
+	padding: 12px 27px 12px 44px;
 }
 
-.bookmarks-inline::before {
+.bookmarks::before {
 	content: "";
 	position: absolute;
 	top: 12px;
@@ -137,30 +149,32 @@ input.focus-search:focus::-webkit-input-placeholder {
 	opacity: 0.3;
 }
 
-.bookmarks-inline:hover {
+.bookmarks:hover {
 	cursor: pointer;
 	background-color: #212a3a;
 }
 
-.bookmarks-inline:hover::before {
+.bookmarks:hover::before {
 	opacity: 1;
 }
 
-.bookmarks-inline:active::before {
+.bookmarks:active::before {
 	opacity: 0.3;
 }
 
 .cart {
-	float: right;
-	width: 150px;
-	text-align: center;
+	position: relative;
+	padding: 12px 30px 12px 50px;
 }
 
 .active-cart {
+	display: inline-block;
+	padding-left: 50px;
+	padding-right: 26px;
 	background-color: #ee3643;
 }
 
-.cart-inline::before {
+.cart::before {
 	content: "";
 	position: absolute;
 	top: 12px;
@@ -172,43 +186,27 @@ input.focus-search:focus::-webkit-input-placeholder {
 	opacity: 0.3;
 }
 
-.cart-inline:hover {
+.cart:hover {
 	cursor: pointer;
 	background-color: #212a3a;
 }
 
-.cart-inline:active,
-.bookmarks-inline:active {
+.cart:active,
+.bookmarks:active {
 	background-color: #161d29;
 }
 
-.cart-inline:hover::before {
+.cart:hover::before {
 	opacity: 1;
 }
 
-.cart-inline:active::before {
+.cart:active::before {
 	opacity: 0.3;
 }
 
-.cart-inline {
-	position: relative;
-	display: block;
-	vertical-align: middle;
-	height: 32px;
-	padding-top: 10px;
-	padding-left: 29px;
-	padding-right: 10px;
-}
-
 .order {
-	float: right;
-	margin-right: 0;
-	width: 150px;
 	background-color: #63a63e;
-	text-align: center;
-	height: 32px;
-	padding-top: 10px;
-	color: #ffffff;
+	padding: 12px 22px 12px 20px;
 }
 
 .order:hover {
@@ -224,35 +222,30 @@ input.focus-search:focus::-webkit-input-placeholder {
 .block {
 	display: inline-block;
 	vertical-align: top;
+	font-size: 0;
 }
 
-.profile-item1 {
+.builder-shop {
 	position: relative;
 	width: 300px;
-	margin-top: 8px;
 }
 
-.profile-item1::before {
+.builder-shop::before {
 	position: absolute;
 	content: "";
-	top: -8px;
-	left: 0;
 	width: 220px;
 	height: 5px;
 	background-color: #b52933;
 }
 
-.profile-item1 p {
+.builder-shop p {
+	margin-top: 26px;
 	margin-left: -8px;
-}
-
-.shop {
 	color: #ee3643;
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
 	white-space: pre-wrap;
-	text-align: center;
 }
 
 .phone {
@@ -274,41 +267,33 @@ input.focus-search:focus::-webkit-input-placeholder {
 	background-position: -5px -374px;
 }
 
-.profile-item2 {
+.phone-number {
 	margin-top: 46px;
-	margin-left: -3px;
+	margin-left: 2px;
 	width: 300px;
 }
 
-.profile-item2 p {
-	color: #32425c;
-	font-family: "Cuprum";
-	font-size: 14px;
-	line-height: 24px;
-	text-align: center;
-	padding-bottom: 2px;
-	padding-left: 4px;
-}
-
-.phone .contact {
+.contact {
+	margin-top: 11px;
+	margin-left: 21px;
 	font-family: "Cuprum";
 	text-align: center;
 	color: #e9292a;
 	font-size: 21px;
 	line-height: 18px;
-	padding-top: 12px;
-	padding-left: 23px;
 }
 
-.header-buttons {
+.adress {
+	margin-left: 28px;
+	margin-top: 18px;
+	color: #32425c;
+	font-size: 14px;
+}
+
+.login {
 	display: inline-block;
-	vertical-align: middle;
-	padding-left: 47px;
-	padding-top: 12px;
-	padding-bottom: 13px;
-	padding-right: 26px;
+	padding: 13px 26px 13px 47px;
 	background-color: #ffffff;
-	text-align: center;
 	text-decoration: none;
 	font-size: 21px;
 	line-height: 18px;
@@ -317,7 +302,7 @@ input.focus-search:focus::-webkit-input-placeholder {
 
 .authorisation {
 	position: relative;
-	margin-left: 53px;
+	margin-left: 57px;
 	margin-top: 47px;
 }
 
@@ -362,7 +347,7 @@ input.focus-search:focus::-webkit-input-placeholder {
 	background-position: -5px -320px;
 }
 
-.header-buttons2 {
+.register {
 	padding: 10px 24px 10px 24px;
 	background-color: #ffffff;
 	text-align: center;
@@ -374,7 +359,7 @@ input.focus-search:focus::-webkit-input-placeholder {
 
 .registration {
 	margin-top: 60px;
-	margin-left: 5px;
+	margin-left: 10px;
 	background-color: #ffffff;
 }
 
@@ -391,35 +376,19 @@ input.focus-search:focus::-webkit-input-placeholder {
 }
 
 .navigation-menu {
-	margin-top: 22px;
+	margin-top: 24px;
 	background: #32425c;
-	width: 940px;
-	max-height: 56px;
 	box-shadow: 0px 5px 0 0 #293449;
+	font-size: 0;
 }
 
 .navigation-menu ul {
-	margin: 0;
-	padding: 0;
 	list-style: none;
 }
 
 .navigation-menu li {
 	display: inline-block;
 	vertical-align: top;
-	width: auto;
-	margin-left: -4px;
-}
-
-
-/* Эти пункты не убирать! Иначе в Internet Еxplorer'e меню развалится*/
-
-.navigation-menu li:first-child {
-	margin-left: 0;
-}
-
-.navigation-menu li:last-child {
-	margin-left: -5px;
 }
 
 .navigation-menu a {
@@ -428,19 +397,17 @@ input.focus-search:focus::-webkit-input-placeholder {
 	padding-bottom: 18px;
 	color: #ffffff;
 	text-decoration: none;
-	width: auto;
-	font-family: "Cuprum";
 	font-size: 17px;
 	line-height: 17px;
 }
 
 .navigation1 {
-	padding-left: 52px;
+	padding-left: 51px;
 	padding-right: 30px;
 }
 
 .navigation2 {
-	padding-left: 33px;
+	padding-left: 34px;
 	padding-right: 28px;
 }
 
@@ -451,11 +418,11 @@ input.focus-search:focus::-webkit-input-placeholder {
 
 .navigation4 {
 	padding-left: 30px;
-	padding-right: 30px;
+	padding-right: 31px;
 }
 
 .navigation5 {
-	padding-left: 28px;
+	padding-left: 29px;
 	padding-right: 32px;
 }
 
@@ -483,7 +450,7 @@ input.focus-search:focus::-webkit-input-placeholder {
 }
 
 .content1 h3 {
-	padding-left: 23px;
+	padding-left: 22px;
 	margin-top: 21px;
 	margin-bottom: 0px;
 }
@@ -502,15 +469,13 @@ input.focus-search:focus::-webkit-input-placeholder {
 	line-height: 17px;
 	margin-left: 25px;
 	margin-top: 12px;
-	padding: 10px 23px 11px;
+	padding: 12px 23px 9px;
 	width: 135px;
 	box-sizing: border-box;
-	border: 0px transparent;
 	border-radius: 4px;
 }
 
 h2 {
-	font-family: "Cuprum";
 	color: #32425c;
 	font-size: 30px;
 	line-height: 30px;
@@ -518,14 +483,8 @@ h2 {
 
 h3 {
 	color: #ffffff;
-	font-family: "Cuprum";
-	font-style: bold;
 	font-size: 24px;
 	line-height: 30px;
-}
-
-.p {
-	color: #ffffff;
 }
 
 .materials {
@@ -553,9 +512,8 @@ h3 {
 }
 
 .discount2 a {
-	margin-top: 12px;
 	margin-left: 23px;
-	padding-left: 22px;
+	padding-left: 23px;
 	padding-right: 9px;
 	background-color: #77bc6d;
 }
@@ -605,6 +563,7 @@ h3 {
 
 .tools a {
 	background-color: #429dc7;
+	padding-left: 26px;
 }
 
 .tools a:hover {
@@ -765,26 +724,18 @@ h3 {
 }
 
 .popular {
-	width: 940px;
 	height: 89px;
 	background-color: #f7f3ec;
 	margin-top: 53px
 }
 
-.popular-h2,
-.popular-button3 {
-	display: inline-block;
-	vertical-align: middle;
-	width: 270px;
-}
-
-.popular-button3 {
-	margin-left: 389px;
-	margin-top: 3px;
+.popular-button {
+	margin-left: 367px;
+	margin-top: 25px;
 }
 
 .popular h2 {
-	width: 280px;
+	display: inline-block;
 	margin-left: 28px;
 	margin-top: 30px;
 	box-sizing: border-box;
@@ -793,7 +744,7 @@ h3 {
 
 .button3 {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	padding: 11px 55px 10px;
 	background-color: #ee3643;
 	text-decoration: none;
@@ -801,6 +752,7 @@ h3 {
 	line-height: 18px;
 	color: #ffffff;
 	border-radius: 4px;
+	box-sizing: border-box;
 }
 
 .button3:hover {
@@ -811,34 +763,18 @@ h3 {
 	background-color: #ba2732;
 }
 
-.equipment-font:lastchild {
-	margin-right: 0px;
+.popular-brands {
+	margin-top: 1px;
 }
 
-.equipment {
-	display: inline-block;
-	vertical-align: top;
-	width: 218px;
-	min-height: 316px;
-	margin-top: 20px;
-	border: 1px solid #e5e5e5;
-	margin-right: 15px;
+.popular-brands h2 {
+	margin-left: 24px;
 }
 
-.equipment p {
-	font-family: "PT sans";
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 20px;
-	text-align: center;
-}
-
-.old-price {
-	font-family: "PT sans";
-	font-size: 17px;
-	line-height: 18px;
-	color: #999999;
-	text-decoration: line-through;
+.button4 {
+	margin-left: 269px;
+	margin-top: 24px;
+	padding: 10px 69px 10px;
 }
 
 .logo-list {
@@ -870,33 +806,15 @@ h3 {
 	margin-right: 0px;
 }
 
-.popular-brands {
-	margin-top: 0;
-	background-color: #f7f3ec;
-}
-
-.popular-brands h2 {
-	width: 370px;
-	margin-left: 24px;
-}
-
-.button4 {
-	padding: 11px 70px 10px;
-}
-
 .service-block {
 	font-size: 0;
-	margin-top: 65px;
+	margin-top: 64px;
 	height: 522px;
 	background-color: #f2f6f8;
 }
 
 .services {
-	width: 410px;
 	height: 120px;
-}
-
-.services {
 	padding-top: 68px;
 	padding-left: 2px;
 }
@@ -904,16 +822,13 @@ h3 {
 .services h2 {
 	margin: 0px;
 	color: #000000;
-	font-size: 30px;
 	font-weight: normal;
 	line-height: 24px;
 }
 
 .services p {
-	margin-top: 30px;
-	margin-bottom: 0px;
+	margin-top: 28px;
 	font-family: "PT sans";
-	font-weight: normal;
 	font-size: 13px;
 	line-height: 24px;
 	white-space: pre;
@@ -921,7 +836,7 @@ h3 {
 
 .service-menu {
 	position: relative;
-	margin-top: 53px;
+	margin-top: 52px;
 	width: 240px;
 	height: 180px;
 }
@@ -974,15 +889,8 @@ h3 {
 	background-color: #ffffff;
 }
 
-.block3 {
-	display: inline-block;
-	vertical-align: top;
-}
-
 .service-slider {
 	display: inline-block;
-	width: 700px;
-	height: 320px;
 }
 
 .delivery-slide {
@@ -1059,21 +967,12 @@ h3 {
 	margin-top: 80px;
 }
 
-.column {
-	display: inline-block;
-	vertical-align: top;
-	min-height: 380px;
-}
-
 .left-col {
 	width: 530px;
-	height: 380px;
 }
 
 .left-col h2 {
 	margin: 2px 0 0 0;
-	font-family: "Cuprum";
-	font-size: 30px;
 	line-height: 24px;
 	color: #000000;
 	font-weight: normal;
@@ -1083,7 +982,6 @@ h3 {
 	margin-top: 5px;
 	margin-bottom: 0;
 	font-family: "PT sans";
-	font-weight: normal;
 	font-size: 13px;
 	line-height: 24px;
 	white-space: pre;
@@ -1092,12 +990,6 @@ h3 {
 
 .logistic-company {
 	margin-top: -13px;
-}
-
-.logistic-company ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
 }
 
 .logistic-company li {
@@ -1124,21 +1016,16 @@ h3 {
 .companies {
 	display: block;
 	padding: 10px 10px 10px 35px;
-	font-family: "Cuprum";
 	font-size: 18px;
-	line-height: 20px;
 }
 
 .right-col {
 	width: 300px;
-	height: 380px;
 	margin-left: 110px;
 }
 
 .right-col h2 {
 	margin: 2px 0 0 0;
-	font-family: "Cuprum";
-	font-size: 30px;
 	line-height: 24px;
 	color: #000000;
 	font-weight: normal;
@@ -1148,7 +1035,6 @@ h3 {
 	margin-top: 5px;
 	margin-bottom: 0;
 	font-family: "PT sans";
-	font-weight: normal;
 	font-size: 13px;
 	line-height: 24px;
 	white-space: pre;
@@ -1168,20 +1054,9 @@ h3 {
 	padding-left: 65px;
 }
 
-.left-part {
-	float: left;
-	width: 330px;
-	height: 150px;
-}
-
-.right-part {
-	float: right;
-	width: 590px;
-	height: 193px;
-}
 
 .footer {
-	margin-top: 76px;
+	margin-top: 85px;
 }
 
 .primary-footer {
@@ -1196,11 +1071,22 @@ h3 {
 	margin: 0 auto;
 }
 
+.left-part {
+	float: left;
+	width: 330px;
+	height: 150px;
+	}
+
+.right-part {
+	float: right;
+	width: 590px;
+	height: 193px;
+}
+
 .left-part p {
 	margin-top: 23px;
 	margin-left: 3px;
 	white-space: pre;
-	font-family: "Cuprum";
 	line-height: 24px;
 	color: #e8ecef;
 }
@@ -1211,8 +1097,6 @@ h3 {
 
 .footer-menu ul,
 .footer-menu-yellow ul {
-	margin: 0;
-	padding: 0;
 	list-style: none;
 }
 
@@ -1226,14 +1110,9 @@ h3 {
 	display: block;
 	padding-top: 17px;
 	padding-bottom: 17px;
-	font-family: "Cuprum";
 	line-height: 24px;
 	color: #f1f5f7;
 	text-decoration: none;
-}
-
-.footer-menu-yellow {
-	margin-left: 15px;
 }
 
 .footer-menu-yellow a {
@@ -1420,18 +1299,15 @@ h3 {
 	text-decoration: none;
 }
 
-.profile-item3 {
+.user-block {
 	display: inline-block;
-	width: 300px;
-	height: 91px;
-	vertical-align: middle;
-	margin-left: 34px;
+	margin-left: 38px;
 	margin-top: 46px;
 }
 
 .usermenu {
 	position: relative;
-	padding: 13px 68px 12px 46px;
+	padding: 13px 67px 12px 47px;
 	background-color: #ffffff;
 }
 
@@ -1492,7 +1368,6 @@ h3 {
 
 .usermenu-item {
 	margin-left: 4px;
-	margin-top: -5px;
 }
 
 .usermenu-item ul {
@@ -1505,7 +1380,7 @@ h3 {
 	display: inline-block;
 	vertical-align: top;
 	height: 35px;
-	padding: 10px 15px;
+	padding: 10px 15px 0 15px;
 }
 
 .usermenu-item li::after {
@@ -2324,7 +2199,8 @@ article {
 	}
 }
 
-	
+
+/*
 @keyframes fadeout {
 	0% {
 		transform: translateX(0);
@@ -2335,6 +2211,15 @@ article {
 		opacity: 0;
 	}
 }
+
+.fadeout-map {
+	display: block;
+	animation-name: fadeout;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	opacity: 0;
+}
+*/
 
 .modal-content-map {
 	display: none;
@@ -2352,12 +2237,9 @@ article {
 
 .show-map {
 	display: block;
-	animation: fadein 1s;
-}
-.fadeout-map{
-	display: block;
-	animation: fadeout 1s;
-	opacity: 0;
+	animation-name: fadein;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
 }
 
 .modal-content,
@@ -2470,7 +2352,9 @@ iframe {
 
 .show-buy-form {
 	display: block;
-	animation: fadein 1s;
+	animation-name: fadein;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
 }
 
 .modal-mail {
@@ -2555,5 +2439,7 @@ iframe {
 
 .show-mail {
 	display: block;
-	animation: fadein 1s;
+	animation-name: fadein;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
 }

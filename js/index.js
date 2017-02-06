@@ -1,3 +1,4 @@
+"use strict";
 var showmap = document.querySelector(".map");
 var popup = document.querySelector(".modal-content-map");
 var close = popup.querySelector(".modal-content-close");
@@ -13,7 +14,7 @@ var guarantee = document.querySelector(".guarantee-service");
 var gslide = document.querySelector(".guarantee-slide");
 var credit = document.querySelector(".credit-service");
 var cslide = document.querySelector(".credit-slide");
-var i = 0;
+var tr = popup.classList.contains(".fadeout-map");
 window.onload = function (event) {
 	delivery.classList.add("show-d");
 };
@@ -45,19 +46,17 @@ credit.addEventListener("click", function (event) {
 	delivery.classList.remove("show-d");
 });
 
-
+ 
 
 showmap.addEventListener("click", function (event) {
 	event.preventDefault();
 	popup.classList.add("show-map");
 });
 
-
 close.addEventListener("click", function (event) {
 	event.preventDefault();
 	popup.classList.remove("show-map");
 	
-  
 });
 
 
@@ -69,13 +68,12 @@ closemail.addEventListener("click", function (event) {
 	event.preventDefault();
 	mailform.classList.remove("show-mail");
 });
-for ( var i = 0; i < buy.length; i++) {
+for (var i = 0; i < buy.length; i++) {
 	buy[i].addEventListener('click', function (event) {
 		event.preventDefault();
 		buyform.classList.add("show-buy-form");
 	});
 }
-
 exitbuyform.addEventListener("click", function (event) {
 	event.preventDefault();
 	buyform.classList.remove("show-buy-form");

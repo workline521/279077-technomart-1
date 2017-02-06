@@ -6,43 +6,41 @@
 	<title>HTML Academy: Техномарт</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet"> </head>
 
 <body>
 	<header>
 		<div class="header1">
 			<div class="container">
-				<div class="logo"> <a href="index.html">ТЕХНОМАРТ</a> </div>
-				<div class="search-tab">
+			    <div class="logo block"> <a>ТЕХНОМАРТ</a> </div>
+				<div class="search-tab block">
 					<form class="search-button" action="/echo" method="get">
 						<label for="search"></label>
-						<input type="search" id="search" name="search" value="Поиск:"> </form>
+						<input  class="focus-search" type="search" id="search" name="search" placeholder="Поиск:"  > </form>
 				</div>
-				<div class="order"> <a class="upper-menu-text" href="#">Оформить заказ</a> </div>
-				<div class="cart active-cart">
-					<div class="cart-inline"> <a class="upper-menu-text" href="#">Корзина: 10</a> </div>
-				</div>
-				<div class="bookmarks">
-					<div class="bookmarks-inline"> <a class="upper-menu-text" href="#">Закладки: 0</a> </div>
-				</div>
-				<div class="clearfix"></div>
+				<ul class="block">
+				    <li class="bookmarks block"> <a class="upper-menu-text" href="#">Закладки: 0</a> </li>
+				    <li class="cart active-cart"> <a class="upper-menu-text" href="#">Корзина: 10</a> </li>
+				    <li class="order block"> <a class="upper-menu-text" href="#">Оформить заказ</a> </li>
+				</ul>
 			</div>
 		</div>
 		<div class="header2">
 			<div class="container">
-				<div class="profile-item1 block">
-					<p><span class="shop">
+				<div class="builder-shop block">
+					<p> 
                Интернет-магазин
                строительных материалов
-               и инструментов для ремонта</span></p>
+               и инструментов для ремонта</p>
 				</div>
-				<div class="profile-item2 block">
+				<div class="phone-number block">
 					<div class="phone">
-						<div class="contact">+7 (812) 555-05-55</div>
+						<p class="contact">+7 (812) 555-05-55</p>
 					</div>
-					<p><span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
+					<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
-				<div class="profile-item3">
+				<div class="user-block">
 					<div class="usermenu"> <a>Равшан Джамшутович</a> </div>
 					<div class="usermenu-item">
 						<ul>
@@ -51,19 +49,17 @@
 						</ul>
 					</div>
 				</div>
-				<div class="main-menu">
-					<div class="navigation-menu">
-						<ul>
-							<li><a href="#"><span class="navigation1">Главная</span></a></li>
-							<li><a href="#"><span class="navigation2">Компания</span></a></li>
-							<li><a href="#"><span class="navigation3">Каталог</span></a></li>
-							<li><a href="#"><span class="navigation4">Новости</span></a></li>
-							<li><a href="#"><span class="navigation5">Спецпредложения</span></a></li>
-							<li><a href="#"><span class="navigation6">Доставка</span></a></li>
-							<li><a href="#"><span class="navigation7">Контакты</span></a></li>
-						</ul>
-					</div>
-				</div>
+				<nav class="navigation-menu">
+					<ul>
+						<li><a href="#"><span class="navigation1">Главная</span></a></li>
+						<li><a href="#"><span class="navigation2">Компания</span></a></li>
+						<li><a href="#"><span class="navigation3">Каталог</span></a></li>
+						<li><a href="#"><span class="navigation4">Новости</span></a></li>
+						<li><a href="#"><span class="navigation5">Спецпредложения</span></a></li>
+						<li><a href="#"><span class="navigation6">Доставка</span></a></li>
+						<li><a href="#"><span class="navigation7">Контакты</span></a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 	</header>

@@ -13,39 +13,36 @@
 	<header>
 		<div class="header1">
 			<div class="container">
-				<div class="logo"> <a>ТЕХНОМАРТ</a> </div>
-				<div class="search-tab">
+				<div class="logo block"> <a>ТЕХНОМАРТ</a> </div>
+				<div class="search-tab block">
 					<form class="search-button" action="/echo" method="get">
 						<label for="search"></label>
 						<input  class="focus-search" type="search" id="search" name="search" placeholder="Поиск:"  > </form>
 				</div>
-				<div class="order"> <a class="upper-menu-text" href="#">Оформить заказ</a> </div>
-				<div class="cart">
-					<div class="cart-inline"> <a class="upper-menu-text" href="#">Корзина: 0</a> </div>
-				</div>
-				<div class="bookmarks">
-					<div class="bookmarks-inline"> <a class="upper-menu-text" href="#">Закладки: 0</a> </div>
-				</div>
-				<div class="clearfix"></div>
+				<ul class="block">
+				    <li class="bookmarks block"> <a class="upper-menu-text" href="#">Закладки: 0</a> </li>
+				    <li class="cart block"> <a class="upper-menu-text" href="#">Корзина: 0</a> </li>
+				    <li class="order block"> <a class="upper-menu-text" href="#">Оформить заказ</a> </li>
+				</ul>
 			</div>
 		</div>
 		<div class="header2">
 			<div class="container">
-				<div class="profile-item1 block">
-					<p><span class="shop">
+				<div class="builder-shop block">
+					<p> 
                Интернет-магазин
                строительных материалов
-               и инструментов для ремонта</span></p>
+               и инструментов для ремонта</p>
 				</div>
-				<div class="profile-item2 block">
+				<div class="phone-number block">
 					<div class="phone">
-						<div class="contact">+7 (812) 555-05-55</div>
+						<p class="contact">+7 (812) 555-05-55</p>
 					</div>
-					<p><span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
+					<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
-				<div class="authorisation block"> <a class="header-buttons" href="#">Войти</a> </div>
-				<div class="registration block"> <a class="header-buttons2" href="#">Регистрация</a> </div>
-				<div class="navigation-menu">
+				<div class="authorisation block"> <a class="login" href="#">Войти</a> </div>
+				<div class="registration block"> <a class="register" href="#">Регистрация</a> </div>
+				<nav class="navigation-menu">
 					<ul>
 						<li><a href="#"><span class="navigation1">Главная</span></a></li>
 						<li><a href="#"><span class="navigation2">Компания</span></a></li>
@@ -55,7 +52,7 @@
 						<li><a href="#"><span class="navigation6">Доставка</span></a></li>
 						<li><a href="#"><span class="navigation7">Контакты</span></a></li>
 					</ul>
-				</div>
+				</nav>
 			</div>
 		</div>
 	</header>
@@ -104,11 +101,10 @@
 				</div>
 				<div class="clearfix"></div>
 			</section>
-			<section class="equipment-font">
+			<section>
 				<div class="popular">
-					<div class="popular-h2">
-						<h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2></div>
-					<div class="popular-button3"><a class="button3" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a></div>
+					<h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+					<a class="popular-button button3" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
 				</div>
 				<div class="catalog-item-section">
 					<div class="index-catalog-item">
@@ -144,9 +140,8 @@
 			</section>
 			<section>
 				<div class="popular popular-brands">
-					<div class="popular-h2">
-						<h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2></div>
-					<div class="popular-button3"><a class="button3 button4" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a></div>
+					<h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+					<a class="button3 button4" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
 				</div>
 				<div class="logo-list">
 					<ul>
@@ -179,14 +174,14 @@
 			</section>
 		</div>
 		<section class="service-block">
-			<div class="container shadow">
+			<div class="container">
 				<div class="services">
 					<h2>СЕРВИСЫ</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!
 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными. 
             </p>
 				</div>
-				<div class="service-menu block3">
+				<div class="service-menu block">
 					<div class="ds"><a class="delivery-service" href="#">Доставка</a></div>
 					<div class="gs"><a class="guarantee-service" href="#">Гарантия</a></div>
 					<div class="cs"><a class="credit-service" href="#">Кредит</a></div>
@@ -200,7 +195,7 @@
 		</section>
 		<section class="columns">
 			<div class="container">
-				<div class="column left-col">
+				<div class="block left-col">
 					<h2>КОМПАНИЯ «ТЕХНОМАРТ»</h2>
             <p>
 Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и 
@@ -214,9 +209,10 @@
 							<li class="companies">Деловые линии</li>
 							<li class="companies">Автотрейдинг</li>
 							<li class="companies">ЖелДорЭкспедиция</li>
-						</ul> <a class="button3" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a> </div>
+						</ul>
+						<a class="button3" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a> </div>
 				</div>
-				<div class="column right-col">
+				<div class="block right-col">
 					<h2>
                 КОНТАКТЫ
             </h2>
@@ -224,7 +220,8 @@
 Вы можете забрать товар сами,
 заехав в наш офис:
             </p>				
-					<a class="map" href="#"><img src="img/map300-158.jpg" width="300" height="158" alt="map"></a> <a class="button3 lost" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a> </div>
+					<a class="map" href="#"><img src="img/map300-158.jpg" width="300" height="158" alt="map"></a>
+					<a class="button3 lost" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a> </div>
 			</div>
 		</section>
 	</main>
