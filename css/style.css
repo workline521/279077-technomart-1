@@ -1054,7 +1054,6 @@ h3 {
 	padding-left: 65px;
 }
 
-
 .footer {
 	margin-top: 85px;
 }
@@ -1064,18 +1063,11 @@ h3 {
 	height: 193px;
 }
 
-.secondary-footer {
-	background-color: #293449;
-	width: 1423px;
-	height: 107px;
-	margin: 0 auto;
-}
-
 .left-part {
 	float: left;
 	width: 330px;
 	height: 150px;
-	}
+}
 
 .right-part {
 	float: right;
@@ -1176,19 +1168,15 @@ h3 {
 
 .secondary-footer {
 	background-color: #293449;
-	width: auto;
 	height: 107px;
-	margin: 0 auto;
+	
 }
 
 .footer-company {
 	display: inline-block;
 	vertical-align: middle;
-	width: 230px;
 	height: 37px;
-	font-family: "Cuprum";
 	font-size: 16px;
-	line-height: 18px;
 	width: 320px;
 	color: #ffffff;
 	margin-right: 20px;
@@ -1210,9 +1198,8 @@ h3 {
 	vertical-align: middle;
 	width: 140px;
 	height: 52px;
-	font-family: "Cuprum";
 	font-size: 16px;
-	line-height: 18px;
+	
 }
 
 .footer-copyright {
