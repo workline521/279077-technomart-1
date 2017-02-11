@@ -449,7 +449,11 @@ input.focus-search:focus:-ms-input-placeholder {
 	margin-top: 59px;
 }
 
-.content1 h3 {
+.features {
+	font-size: 0;
+}
+
+.block2 h3 {
 	padding-left: 22px;
 	margin-top: 21px;
 	margin-bottom: 0px;
@@ -506,8 +510,6 @@ h3 {
 
 .discount2 {
 	display: block;
-	width: 300px;
-	height: 123px;
 	background: #85d179 url("../img/discount2-background.png") no-repeat 196px 26px;
 }
 
@@ -528,10 +530,8 @@ h3 {
 
 .delivery {
 	display: block;
-	width: 300px;
-	height: 123px;
 	background: #f6b22d url("../img/delivery-background.png") no-repeat 191px 32px;
-	margin-top: -4px;
+	margin-top: -2px;
 }
 
 .delivery a {
@@ -557,7 +557,8 @@ h3 {
 }
 
 .tools {
-	margin-left: 16px;
+	margin-left: 20px;
+	margin-right: 20px;
 	background: #4aafde url("../img/tools-background.png") no-repeat 197px 33px;
 }
 
@@ -575,7 +576,6 @@ h3 {
 }
 
 .mashinery {
-	margin-left: 15px;
 	background: #cc79d1 url("../img/mashinery-background.png") no-repeat 191px 31px;
 }
 
@@ -593,12 +593,10 @@ h3 {
 	background-color: #804c83;
 }
 
-.content2 {
-	float: left;
-	margin-top: 20px;
-}
-
 .slider {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 20px;
 	position: relative;
 }
 
@@ -609,7 +607,7 @@ h3 {
 
 .slider-controls {
 	position: absolute;
-	bottom: 35px;
+	bottom: 36px;
 	left: 210px;
 	width: 200px;
 	height: 10px;
@@ -636,7 +634,6 @@ h3 {
 	font-family: "PT Sans";
 	font-size: 18px;
 	line-height: 24px;
-	font-weight: normal;
 	color: #ffffff;
 }
 
@@ -647,7 +644,6 @@ h3 {
 
 .slide-title {
 	font-family: "Cuprum";
-	font-weight: bold;
 	font-size: 36px;
 	line-height: 30px;
 }
@@ -681,9 +677,12 @@ h3 {
 	display: block;
 }
 
+.label-btn1 {
+	margin-right: 10px;
+}
+
 .content3 {
-	float: right;
-	margin-top: -4px;
+	display: inline-block;
 }
 
 .clearfix {
@@ -806,6 +805,14 @@ h3 {
 	margin-right: 0px;
 }
 
+
+/* PSD Макет сделан криво! Содержимое 3го слайда из слайдера с сервисом не входит в центровщик!*/
+
+.expand-slider {
+	width: 960px;
+	padding-left: 20px;
+}
+
 .service-block {
 	font-size: 0;
 	margin-top: 64px;
@@ -905,6 +912,7 @@ h3 {
 
 .guarantee-slide {
 	display: none;
+	margin-left: 7px;
 	width: 700px;
 	height: 320px;
 	background: url("../img/guarantee-slider.png") no-repeat 73px 53px;
@@ -931,6 +939,7 @@ h3 {
 
 .credit-slide {
 	display: none;
+	margin-left: 20px;
 	width: 700px;
 	height: 320px;
 	background: transparent url("../img/credit-slider.png") no-repeat 47px 53px;
@@ -1169,7 +1178,6 @@ h3 {
 .secondary-footer {
 	background-color: #293449;
 	height: 107px;
-	
 }
 
 .footer-company {
@@ -1199,7 +1207,6 @@ h3 {
 	width: 140px;
 	height: 52px;
 	font-size: 16px;
-	
 }
 
 .footer-copyright {
@@ -1539,21 +1546,22 @@ h3 {
 	padding: 10px;
 	font-family: "PT Sans";
 	font-size: 13px;
-	line-height: 18px;
-	font-weight: normal;
-	color: #c4c1bb;
+	
 }
 
 .price {
 	margin-left: 26px;
+	color: #ee3643;
 }
 
 .type {
 	margin-left: 46px;
+	    color: #c4c1bb;
 }
 
 .function {
 	margin-left: 40px;
+	    color: #c4c1bb;
 }
 
 .underline {
@@ -1633,7 +1641,10 @@ li .arrow-down:active::before {
 	border-top-color: #ee3643;
 	border-bottom-color: #ee3643;
 }
-
+li .arrow-up::before{
+	border-top-color: #ee3643;
+	border-bottom-color: #ee3643;
+}
 .right-sort-by a:hover {
 	color: #000000;
 }
@@ -2187,7 +2198,7 @@ article {
 }
 
 
-/*
+
 @keyframes fadeout {
 	0% {
 		transform: translateX(0);
@@ -2199,14 +2210,7 @@ article {
 	}
 }
 
-.fadeout-map {
-	display: block;
-	animation-name: fadeout;
-	animation-duration: 1s;
-	animation-timing-function: ease-in;
-	opacity: 0;
-}
-*/
+
 
 .modal-content-map {
 	display: none;
@@ -2222,12 +2226,15 @@ article {
 	box-shadow: 0 0 20px 5px #c4c3c4;
 }
 
+
+
 .show-map {
 	display: block;
-	animation-name: fadein;
-	animation-duration: 1s;
+	animation: fadein;
+	animation-duration: 0.8s;
 	animation-timing-function: ease-out;
 }
+
 
 .modal-content,
 .catalog-modal {
@@ -2256,7 +2263,7 @@ article {
 	padding: 10px 20px 20px 10px;
 }
 
-.close-map {
+.cross{
 	top: 36px;
 }
 
@@ -2340,7 +2347,7 @@ iframe {
 .show-buy-form {
 	display: block;
 	animation-name: fadein;
-	animation-duration: 1s;
+	animation-duration: 0.8s;
 	animation-timing-function: ease-out;
 }
 
@@ -2427,6 +2434,13 @@ iframe {
 .show-mail {
 	display: block;
 	animation-name: fadein;
-	animation-duration: 1s;
+	animation-duration: 0.8s;
 	animation-timing-function: ease-out;
 }
+.fadeout { 
+	display: block;
+	animation-name: fadeout;
+	animation-duration: 0.8s;
+	animation-timing-function: ease-in;
+	opacity: 0;
+	}

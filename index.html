@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.min.css" rel="stylesheet"> </head>
+	<link href="css/style.css" rel="stylesheet"> </head>
 
 <body>
 	<header>
@@ -59,20 +59,17 @@
 	<main class="content">
 		<div class="container ">
 			<section class="features">
-				<div class="content1">
-					<div class="block2 materials">
+					<div class="materials block2">
 						<h3>Материалы</h3> <a class="button2" href="#">НА ЛЮБОЙ ВКУС</a> </div>
-					<div class="block2 tools">
-						<h3>Инструмент</h3> <a class="button2" href="#">НА ВСЕ СЛУЧАИ</a> </div>
-					<div class="block2 mashinery">
+					<div class="tools block2">
+						<h3>Инструмент</h3> <a class="button2" href="#">НА ВСЕ СЛУЧАИ</a></div>
+					<div class="mashinery block2">
 						<h3>Техника</h3> <a class="button2" href="#">ДЛЯ СТРОЙКИ</a> </div>
-				</div>
-				<div class="content2">
 					<div class="slider">
 						<input type="radio" id="btn-1" name="toggle" checked>
 						<input type="radio" id="btn-2" name="toggle">
 						<div class="slider-controls">
-							<label for="btn-1"></label>
+							<label for="btn-1" class="label-btn1"></label>
 							<label for="btn-2"></label>
 						</div>
 						<div class="slides">
@@ -92,15 +89,13 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="content3">
-					<div class="discount2">
+					<div class="content3">
+					<div class="discount2 block2">
 						<h3>Скидки 50%</h3> <a class="button2" href="#">НА 350 ТОВАРОВ</a> </div>
-					<div class="delivery">
+					<div class="delivery block2">
 						<h3>Доставка</h3> <a class="button2" href="#">БЕСПЛАТНО</a> </div>
-				</div>
-				<div class="clearfix"></div>
-			</section>
+					</div>
+				</section>
 			<section>
 				<div class="popular">
 					<h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
@@ -174,7 +169,7 @@
 			</section>
 		</div>
 		<section class="service-block">
-			<div class="container">
+			<div class="container expand-slider">
 				<div class="services">
 					<h2>СЕРВИСЫ</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!
@@ -276,15 +271,15 @@
 			</div>
 		</div>
 	</footer>
-	<div class="modal-content">
-		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+	<div class="modal-content catalog-modal">
+		<button class="modal-content-close catalog-modal-close" type="button" title="Закрыть">Закрыть</button>
 		<ul>
 			<li><a class="popup-button1" href="#">ОФОРМИТЬ ЗАКАЗ</a></li>
 			<li><a class="popup-button2" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a></li>
 		</ul>
 	</div>
 	<div class="modal-content-map">
-		<button class="modal-content-close close-map" type="button" title="Закрыть">Закрыть</button>
+		<button class="modal-content-close cross" type="button" title="Закрыть">Закрыть</button>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616100688!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1485586657268" width="940" height="446" allowfullscreen></iframe>
 	</div>
 	<div class="modal-mail">
@@ -301,7 +296,7 @@
 			<button class="send-mail" type="submit">ОТПРАВИТЬ</button>
 		</form>
 	</div>
-	<script src="js/index.min.js"></script>
+	<script src="js/output.min.js"></script>
 </body>
 
 </html>
