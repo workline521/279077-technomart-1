@@ -479,13 +479,14 @@ input.focus-search:focus:-ms-input-placeholder {
 	border-radius: 4px;
 }
 
-h2 {
+.services h2,
+.columns h2 {
 	color: #32425c;
 	font-size: 30px;
 	line-height: 30px;
 }
 
-h3 {
+.features h3 {
 	color: #ffffff;
 	font-size: 24px;
 	line-height: 30px;
