@@ -1546,7 +1546,6 @@ h3 {
 	padding: 10px;
 	font-family: "PT Sans";
 	font-size: 13px;
-	
 }
 
 .price {
@@ -1556,12 +1555,12 @@ h3 {
 
 .type {
 	margin-left: 46px;
-	    color: #c4c1bb;
+	color: #c4c1bb;
 }
 
 .function {
 	margin-left: 40px;
-	    color: #c4c1bb;
+	color: #c4c1bb;
 }
 
 .underline {
@@ -1641,10 +1640,12 @@ li .arrow-down:active::before {
 	border-top-color: #ee3643;
 	border-bottom-color: #ee3643;
 }
-li .arrow-up::before{
+
+li .arrow-up::before {
 	border-top-color: #ee3643;
 	border-bottom-color: #ee3643;
 }
+
 .right-sort-by a:hover {
 	color: #000000;
 }
@@ -2197,8 +2198,6 @@ article {
 	}
 }
 
-
-
 @keyframes fadeout {
 	0% {
 		transform: translateX(0);
@@ -2209,8 +2208,6 @@ article {
 		opacity: 0;
 	}
 }
-
-
 
 .modal-content-map {
 	display: none;
@@ -2226,15 +2223,12 @@ article {
 	box-shadow: 0 0 20px 5px #c4c3c4;
 }
 
-
-
 .show-map {
 	display: block;
 	animation: fadein;
 	animation-duration: 0.8s;
 	animation-timing-function: ease-out;
 }
-
 
 .modal-content,
 .catalog-modal {
@@ -2263,7 +2257,7 @@ article {
 	padding: 10px 20px 20px 10px;
 }
 
-.cross{
+.cross {
 	top: 36px;
 }
 
@@ -2437,10 +2431,11 @@ iframe {
 	animation-duration: 0.8s;
 	animation-timing-function: ease-out;
 }
-.fadeout { 
+
+.fadeout {
 	display: block;
 	animation-name: fadeout;
 	animation-duration: 0.8s;
 	animation-timing-function: ease-in;
 	opacity: 0;
-	}
+}
