@@ -169,6 +169,7 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .active-cart {
 	display: inline-block;
+	vertical-align: top;
 	padding-left: 50px;
 	padding-right: 26px;
 	background-color: #ee3643;
@@ -292,6 +293,7 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .login {
 	display: inline-block;
+	vertical-align: top;
 	padding: 13px 26px 13px 47px;
 	background-color: #ffffff;
 	text-decoration: none;
@@ -461,6 +463,7 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .block2 {
 	display: inline-block;
+	vertical-align: top;
 	width: 300px;
 	height: 123px;
 }
@@ -596,9 +599,11 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .slider {
 	display: inline-block;
+	vertical-align: top;
 	margin-top: 20px;
 	margin-right: 20px;
 	position: relative;
+	background: #55493a;
 }
 
 .slider input[type=radio] {
@@ -618,6 +623,7 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .slider-controls label {
 	display: inline-block;
+	vertical-align: top;
 	width: 6px;
 	height: 6px;
 	background: #ffffff;
@@ -684,6 +690,7 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .content3 {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .clearfix {
@@ -736,10 +743,14 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .popular h2 {
 	display: inline-block;
+	vertical-align: top;
 	margin-left: 28px;
 	margin-top: 30px;
 	box-sizing: border-box;
+	font-size: 30px;
 	font-weight: normal;
+	color: #32425c;
+	line-height: 30px;
 }
 
 .button3 {
@@ -816,7 +827,7 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .service-block {
 	font-size: 0;
-	margin-top: 64px;
+	margin-top: 65px;
 	height: 522px;
 	background-color: #f2f6f8;
 }
@@ -897,14 +908,34 @@ input.focus-search:focus:-ms-input-placeholder {
 	background-color: #ffffff;
 }
 
-.service-slider {
+.delivery-slide {
 	display: inline-block;
+	vertical-align: top;
+	width: 720px;
+	height: 320px;
+	background: url("../img/deliveryslide.png") no-repeat 231px 73px;
 }
 
-.delivery-slide {
-	width: 700px;
-	height: 320px;
-	background: url("../img/delivery-slider.png") no-repeat 80px 53px;
+.delivery-slide h2,
+.guarantee-slide h2,
+.credit-slide h2 {
+	margin-top: 55px;
+	margin-left: 80px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+	color: #32425c;
+	line-height: 24px;
+}
+
+.delivery-slide p,
+.guarantee-slide p,
+.credit-slide p {
+	margin-left: 80px;
+	font-family: "PT sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	white-space: pre;
 }
 
 .close-delivery {
@@ -913,14 +944,14 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .guarantee-slide {
 	display: none;
-	margin-left: 7px;
-	width: 700px;
+	width: 720px;
 	height: 320px;
-	background: url("../img/guarantee-slider.png") no-repeat 73px 53px;
+	background: url("../img/guaranteeslide.png") no-repeat 319px 51px;
 }
 
 .show-guarantee {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .show-g {
@@ -940,17 +971,16 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .credit-slide {
 	display: none;
-	margin-left: 20px;
-	width: 700px;
+	width: 720px;
 	height: 320px;
-	background: transparent url("../img/credit-slider.png") no-repeat 47px 53px;
+	background: url("../img/creditslide.png") no-repeat 255px 48px;
 }
 
 .credit-button {
 	display: inline-block;
 	vertical-align: middle;
-	margin-top: 186px;
-	margin-left: 48px;
+	margin-left: 80px;
+	margin-top: 13px;
 	padding: 10px 45px;
 	background-color: #ee3643;
 	text-decoration: none;
@@ -969,7 +999,8 @@ input.focus-search:focus:-ms-input-placeholder {
 }
 
 .show-credit {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .columns {
@@ -1296,6 +1327,7 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .user-block {
 	display: inline-block;
+	vertical-align: top;
 	margin-left: 38px;
 	margin-top: 46px;
 }
@@ -1513,6 +1545,7 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .right-sort-by {
 	display: inline-block;
+	vertical-align: middle;
 	width: 700px;
 	max-height: 38px;
 	background-color: #f7f3ec;
@@ -1522,6 +1555,7 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .right-sort-by ul {
 	display: inline-block;
+	vertical-align: middle;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -1540,6 +1574,7 @@ input.focus-search:focus:-ms-input-placeholder {
 
 .right-sort-by li {
 	display: inline-block;
+	vertical-align: baseline;
 }
 
 .right-sort-by a {
@@ -1589,6 +1624,7 @@ input.focus-search:focus:-ms-input-placeholder {
 li .arrow {
 	font-size: 0px;
 	display: inline-block;
+	vertical-align: middle;
 	padding: 10px;
 }
 
@@ -1602,6 +1638,7 @@ li .arrow-down {
 
 li .arrow::before {
 	display: inline-block;
+	vertical-align: top;
 	content: "";
 	border: 10px solid #c6c2bd;
 	border-right-width: 5px;
@@ -1730,17 +1767,18 @@ li .arrow-up::before {
 
 .price-controls label {
 	display: inline-block;
+	vertical-align: top;
 	width: 95px;
 	font-size: 17px;
 	line-height: 18px;
 }
 
 .price-controls input {
-	width: 95px;
+	width: 55px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 18px;
-	padding: 10px 0;
+	padding: 10px 20px;
 	text-align: center;
 	color: #000000;
 	border: none;
@@ -1846,7 +1884,7 @@ li .arrow-up::before {
 	display: block;
 	position: relative;
 	width: 140px;
-	margin-top: 15px;
+	margin-top: 17px;
 	padding-left: 35px;
 	cursor: pointer;
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -1902,7 +1940,7 @@ li .arrow-up::before {
 }
 
 .show {
-	margin-top: 82px;
+	margin-top: 79px;
 	padding: 10px 38px;
 	border: 1px solid #e5e5e5;
 	border-radius: 2px;
@@ -1913,6 +1951,14 @@ li .arrow-up::before {
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
+}
+
+.show:hover {
+	border-color: #bdc6ca;
+}
+
+.show:active {
+	border-color: #ee3643;
 }
 
 .catalog-item-section {
@@ -1930,6 +1976,7 @@ li .arrow-up::before {
 .index-catalog-item {
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
 	width: 218px;
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -2031,6 +2078,9 @@ li .arrow-up::before {
 .catalog-item .actions .buy:hover,
 .index-catalog-item .actions .buy:hover {
 	background: #5fbb2d url(../img/.icon-basket2-17-16.png) no-repeat 13px 7px;
+	border-left-color: #5fbb2d;
+	border-right-color: #5fbb2d;
+	border-top-color: #5fbb2d;
 }
 
 .catalog-item .actions .buy:active,
@@ -2238,19 +2288,74 @@ article {
 	top: 50%;
 	left: 50%;
 	width: 620px;
-	height: 282px;
+	height: 275px;
 	margin-left: -310px;
 	margin-top: -141px;
-	background: url("../img/cart-background620-282.png") no-repeat;
+	background-image: linear-gradient( #ffffff 59%, #f1f1f1 59%);
+	border-top: 7px solid #ee3643;
 	box-shadow: 0 15px 30px 5px #747b81;
 	z-index: 1001;
+}
+
+.modal-content ul,
+.catalog-modal ul {
+	margin-top: 45px;
+}
+
+.green-checkbox {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 81px;
+	margin-top: 47px;
+	position: relative;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	background: #63a63e;
+}
+
+.green-checkbox::before {
+	position: absolute;
+	content: "";
+	top: 34px;
+	left: 14px;
+	width: 15px;
+	height: 7px;
+	border-radius: 1px;
+	z-index: 1000;
+	background: #ffffff;
+	transform: rotate(45deg);
+}
+
+.green-checkbox::after {
+	position: absolute;
+	content: "";
+	top: 31px;
+	left: 21px;
+	width: 35px;
+	height: 7px;
+	border-radius: 1px;
+	z-index: 1000;
+	background: #ffffff;
+	transform: rotate(-45deg);
+}
+
+.modal-heading {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 71px;
+	margin-left: 30px;
+	white-space: pre;
+	font-size: 30px;
+	line-height: 18px;
+	color: #000000;
 }
 
 .modal-content-close,
 .catalog-modal-close {
 	position: absolute;
-	top: 9px;
-	right: 9px;
+	top: 3px;
+	right: 5px;
 	width: 21px;
 	height: 21px;
 	font-size: 0;
@@ -2262,6 +2367,7 @@ article {
 
 .cross {
 	top: 36px;
+	right: 9px;
 }
 
 iframe {
@@ -2299,12 +2405,14 @@ iframe {
 .modal-content li,
 .catalog-modal li {
 	display: inline-block;
-	margin-top: 218px;
+	vertical-align: top;
+	margin-top: 47px;
 }
 
 .modal-content li:first-child,
 .catalog-modal li:first-child {
 	margin-left: 81px;
+	margin-top: 47px;
 }
 
 .modal-content li:last-child,
@@ -2332,13 +2440,25 @@ iframe {
 }
 
 .popup-button1:hover {
-	background-color: #b22832;
+	background-color: #ca2c37;
+}
+
+.popup-button1:active {
+	background-color: #ba2732;
 }
 
 .popup-button2 {
 	padding: 11px 44px;
 	background: #ffffff;
 	color: #000000;
+}
+
+.popup-button2:hover {
+	color: #ee3643;
+}
+
+.popup-button2:active {
+	color: #cacaca;
 }
 
 .show-buy-form {
@@ -2354,20 +2474,22 @@ iframe {
 	top: 50%;
 	left: 50%;
 	width: 620px;
-	height: 430px;
+	height: 423px;
 	margin-left: -310px;
 	margin-top: -215px;
-	background: url("../img/writeform620-430.png");
-	box-shadow: 0 0 60px 10px #696969;
+	background-image: linear-gradient( #ffffff 73%, #f1f1f1 73%);
+	border-top: 7px solid #ee3643;
+	box-shadow: 0 0 40px 0px #696969;
 	z-index: 1000;
 }
 
+.modal-mail form {
+	font-size: 0;
+}
+
 .modal-mail input {
-	margin-left: 80px;
-	padding-left: 13px;
-	padding-top: 9px;
-	padding-bottom: 9px;
-	width: 216px;
+	padding: 9px 13px;
+	width: 220px;
 	background-color: #ffffff;
 	border: 2px solid #d7dcde;
 	border-radius: 2px;
@@ -2378,15 +2500,19 @@ iframe {
 	box-sizing: border-box;
 }
 
-.modal-mail input:nth-child(3) {
+.mail-input1 {
+	margin-left: 80px;
+}
+
+.mail-input2 {
 	margin-left: 20px;
 }
 
 .modal-mail textarea {
 	margin-left: 80px;
-	padding-left: 13px;
-	padding-top: 9px;
-	width: 456px;
+	padding: 9px 13px;
+	width: 460px;
+	height: 112px;
 	background-color: #ffffff;
 	border: 2px solid #d7dcde;
 	border-radius: 2px;
@@ -2398,22 +2524,23 @@ iframe {
 }
 
 .modal-mail p {
-	white-space: pre;
-	margin-top: 20px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
 	margin-left: 80px;
-	margin-bottom: 13px;
+	margin-bottom: 9px;
+	white-space: pre;
 	line-height: 18px;
 }
 
 .modal-mail p:first-child {
-	margin-top: 53px;
+	margin-top: 47px;
 }
 
 .send-mail {
 	width: 460px;
 	padding: 10px 198px 10px 198px;
 	margin-left: 80px;
-	margin-top: 74px;
+	margin-top: 77px;
 	color: #ffffff;
 	background-color: #ee3643;
 	font-weight: normal;
@@ -2427,7 +2554,11 @@ iframe {
 }
 
 .send-mail:hover {
-	background-color: #b22832;
+	background-color: #ca2c37;
+}
+
+.send-mail:active {
+	background-color: #ba2732;
 }
 
 .show-mail {
